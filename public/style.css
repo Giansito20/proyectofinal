@@ -1,0 +1,49 @@
+* {
+    font-family: 'Raleway' , sans-serif;
+}
+
+.nosotros-h2 {
+    text-transform: uppercase;
+    font-family: 'Raleway' , sans-serif;
+    font-weight: 900;
+}
+
+body{
+    background-color: rgb(242, 242, 242);
+}
+
+.slide {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 95px;
+    margin-right: 95px;
+}
+
+.slide img {
+    height: 70vh;
+}
+
+.img-logo {
+    width: 96px
+}
+
+.footer-h{
+    margin-top: 10px;
+    margin-left: 10px;
+    
+}
+
+.ultima-h {
+    margin-bottom: 10px;
+}
+
+.ultima2-h{
+    margin-bottom: 10px;
+}
+
+.parrafo-h {
+    
+    background-color: bisque;
+    margin-bottom: 10px;
+}
+
