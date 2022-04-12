@@ -19,8 +19,8 @@ const mysql = require('mysql2');
 conexion.connect((error) =>{
     if(error) throw error;
     console.log('Conexión a la Data Base exitosa!!');
-});  
- */
+});   */
+
 app.use(express.json());
 app.use(express.urlencoded({extended:false}));
 //app.use(express.static(path.join(__dirname, 'public')));
@@ -58,7 +58,6 @@ app.post('/formulario', (req, res) =>{
         });
 
     }else{
-
         console.log(nombre);
         console.log(precio);
         
