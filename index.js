@@ -41,7 +41,10 @@ app.get('/formulario', (req, res) =>{
 });
 
 app.post('/formulario', (req, res) =>{
-
+    
+    res.render('productos', {
+        titulo: 'MENU',
+    }); 
     //Desestructuración de las variables
     const { nombre, precio,} = req.body;
         
@@ -58,8 +61,7 @@ app.post('/formulario', (req, res) =>{
 
         console.log(nombre);
         console.log(precio);
-        res.render('productos', {
-            titulo: 'MENU',
+        
         //Insertar datos a la DB
         let data = {
             producto_nombre: nombre, 
@@ -81,9 +83,11 @@ app.get('/productos', (req, res) =>{
         res.render('productos', {titulo: 'MENU'})
 });
 
+
 app.get('/contacto', (req, res) =>{
     res.render('contacto', {titulo: 'Escríbenos'})
 });
+
 
 app.post('/contacto', (req, res) =>{
 
