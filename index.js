@@ -7,7 +7,7 @@ const hbs = require('hbs');
 //Traemos la librería para la conexión
 const mysql = require('mysql2');
 
-//Creamos la configuración de la conexión
+/* //Creamos la configuración de la conexión
     const conexion =  mysql.createConnection({
     host: "localhost",
     user: "root",
@@ -20,7 +20,7 @@ conexion.connect((error) =>{
     if(error) throw error;
     console.log('Conexión a la Data Base exitosa!!');
 });  
-
+ */
 app.use(express.json());
 app.use(express.urlencoded({extended:false}));
 //app.use(express.static(path.join(__dirname, 'public')));
