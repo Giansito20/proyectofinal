@@ -83,36 +83,6 @@ app.get('/productos', (req, res) =>{
         res.render('productos', {titulo: 'MENU'})
 });
 
-
-app.get('/contacto', (req, res) =>{
-    res.render('contacto', {titulo: 'Escríbenos'})
-});
-
-
-app.post('/contacto', (req, res) =>{
-
-    //Desestructuración de las variables
-    const { nombre, email } = req.body;
-        
-    if(nombre == "" || email == ""){
-        
-        let validacion = 'Faltan tus datos';
-        
-        res.render('contacto', {
-            titulo: 'Escríbenos',
-            validacion
-        });
-
-    }else{
-        console.log(nombre);
-        console.log(email);
-        res.render('index', {
-            titulo: 'Bienvenidos a Alabama Beer',
-        }); 
-    }
-});
-
-
 app.get('/bebidas', (req, res) =>{
     res.render('bebidas', {titulo: 'Bebidas'})
 });
