@@ -58,7 +58,8 @@ app.post('/formulario', (req, res) =>{
 
         console.log(nombre);
         console.log(precio);
-        
+        res.render('productos', {
+            titulo: 'MENU',
         //Insertar datos a la DB
         let data = {
             producto_nombre: nombre, 
