@@ -77,16 +77,7 @@ app.post('/formulario', (req, res) =>{
 });
 
 app.get('/productos', (req, res) =>{
-
-    let sql = 'SELECT * FROM productos';
-
-    conexion.query(sql, (error, results) =>{
-        if(error) throw error;
-        res.render('productos', {
-            titulo: 'MENU',
-            results: results,        
-        })
-    })
+        res.render('productos', {titulo: 'MENU'})
 });
 
 app.get('/contacto', (req, res) =>{
