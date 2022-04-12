@@ -1,0 +1,21 @@
+--Creacion de la DB--
+
+create database proyectofinal;
+
+use proyectofinal;
+create table productos(
+producto_id int unsigned not null auto_increment,
+producto_nombre varchar(100) not null,
+producto_precio int not null,
+primary key(producto_id)
+);
+
+
+--Se cargan pedidos de los clientes--
+
+SELECT * FROM proyectofinal.productos;
+
+'1', 'hambuguesa', '300'
+'2', 'Lomo', '500'
+'3', 'hambuguesa', '12'
+'4', 'pancho', '300'
